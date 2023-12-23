@@ -82,7 +82,7 @@ pageTotalCount|10|페이지네이션 시 전체 페이지 개수|Number
  **Samlple Request URL**|http://localhost:8089/v1/api/employee/1||
  **Request Body**|[X]|
  **Response Body**|
- ||{<br>&emsp;  "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>&emsp;  "code": 200,<br>&emsp;  "dataList": [<br>&emsp;&emsp; {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "name": "직원 이름",<br>&emsp;&emsp;    "workType": "근무 형태"<br>&emsp;&emsp;  },<br>&emsp;...<br>&emsp;],<br>&emsp;  "itemTotalCount": 요소 개수,<br>&emsp;  "pageTotalCount": 전체 페이지 개수<br>}<br>
+ |예시|{<br>&emsp;  "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>&emsp;  "code": 200,<br>&emsp;  "dataList": [<br>&emsp;&emsp; {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "name": "직원 이름",<br>&emsp;&emsp;    "workType": "근무 형태"<br>&emsp;&emsp;  },<br>&emsp;...<br>&emsp;],<br>&emsp;  "itemTotalCount": 요소 개수,<br>&emsp;  "pageTotalCount": 전체 페이지 개수<br>}<br>
 
 #### - 사무실 좌석 예약
 
@@ -93,9 +93,9 @@ pageTotalCount|10|페이지네이션 시 전체 페이지 개수|Number
  **Path Variable** | [X] | **Query Parameter**| [X]
  **Samlple Request URL**|http://localhost:8089/v1/api/office-seat||
  **Request Body**|
- ||{<br>  "employeeId": "직원 id",<br>  "officeSeatId": "좌석 id",<br>  "reserveSeatDate": "2023-12-23"<br>}
+ |예시|{<br>  "employeeId": 직원 id,<br>  "officeSeatId": 좌석 id,<br>  "reserveSeatDate": "2023-12-23"<br>}
  **Response Body**|
- ||{<br>&emsp; "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>  &emsp; "code": 201,<br>&emsp;  "data": {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "officeSeatId": 좌석 id,<br>&emsp;&emsp;    "reserveSeatDate": "2023-12-23"<br>&emsp;  }<br>}
+ |예시|{<br>&emsp; "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>  &emsp; "code": 201,<br>&emsp;  "data": {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "officeSeatId": 좌석 id,<br>&emsp;&emsp;    "reserveSeatDate": "2023-12-23"<br>&emsp;  }<br>}
 
 
  #### - 사무실 좌석 예약 취소
@@ -107,9 +107,9 @@ pageTotalCount|10|페이지네이션 시 전체 페이지 개수|Number
  **Path Variable** | [X] | **Query Parameter**| [X]
  **Samlple Request URL**|http://localhost:8089/v1/api/cancel/office-seat||
  **Request Body**|
- ||{<br>  "employeeId": "직원 id",<br>  "officeSeatId": "좌석 id",<br>  "reserveSeatDate": "2023-12-23"<br>}
+ |예시|{<br>  "employeeId": 직원 id,<br>  "officeSeatId": 좌석 id,<br>  "reserveSeatDate": "2023-12-23"<br>}
  **Response Body**|
- ||{<br>&emsp; "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>  &emsp; "code": 200,<br>&emsp;  "data": {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "officeSeatId": 좌석 id,<br>&emsp;&emsp;    "reserveSeatDate": "2023-12-23"<br>&emsp;  }<br>}
+ |예시|{<br>&emsp; "result": "S",<br>&emsp;  "resultMessage": "SUCCESS",<br>  &emsp; "code": 200,<br>&emsp;  "data": {<br>&emsp;&emsp;    "employeeId": 직원 id,<br>&emsp;&emsp;    "officeSeatId": 좌석 id,<br>&emsp;&emsp;    "reserveSeatDate": "2023-12-23"<br>&emsp;  }<br>}
 
  ---
  # 실행 방법
