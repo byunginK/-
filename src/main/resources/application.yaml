@@ -1,0 +1,54 @@
+server:
+  port: 8089
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    hikari:
+      maximum-pool-size: 30
+      max-lifetime: 60000
+      jdbc-url: jdbc:mysql://localhost:3306/test
+      username: test
+      password: test123!
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      connection-timeout: 5000
+      pool-name: Spring-HikariPool
+
+userlock:
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+      max-lifetime: 60000
+      jdbc-url: jdbc:mysql://localhost:3306/test
+      username: test
+      password: test123!
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      connection-timeout: 5000
+      pool-name: UserLock-HikariPool
+
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    display-request-duration: true
+  packages-to-scan: com.example.reserve.demo.controller
+
+
+logging:
+  pattern:
+    console: "[ %d{ yyyy-MM-dd HH:mm:ss }:%-3relative ][ %thread ] %-5level - %msg%n"
+  level:
+    root: info
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor: trace
