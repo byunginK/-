@@ -1,5 +1,5 @@
 # 설계
-## - DB
+## DB
 #### DB 정보: MYSQL 8.2.0
 ### 1. 테이블 정보
 
@@ -44,7 +44,7 @@
  modify_date_time|timestamp|변경 일시|
 
 
- ## - API
+ ## API
  #### API 스펙 
  - kotlin 1.9.2 
  - java,jvm 17
@@ -119,7 +119,7 @@ pageTotalCount|10|페이지네이션 시 전체 페이지 개수|Number
 docker run -e MYSQL_ROOT_PASSWORD=root123! -e MYSQL_USER=test -e MYSQL_PASSWORD=test123! -e MYSQL_DATABASE=test --name mysql-test -p 3306:3306 -d mysql:8.2.0
 ```
  - 아래 링크의 DDL SQL코드를 DB에서 실행 **or** 프로젝트 application.yaml 의 `spring.jpa.hibernate.ddl-auto = create`로 변경 후 서버 실행  
-  > [DB DDL SQL link](http://github.com)
+  > [DB DDL SQL link](https://github.com/byunginK/KimByungIn/blob/main/employee_officeSeat.sql)
 
 
 ## 2. API 서버 및 테스트 환경 구축
